@@ -1,0 +1,29 @@
+schema {
+	query: Query
+	mutation: Mutation
+}
+
+type Currency {
+	currencyCode: ID!
+	country: String
+	tradeableFlag: Boolean
+	description: String
+	image: String
+}
+
+input CurrencyInput {
+	country: String
+	tradeableFlag: Boolean
+	description: String
+	image: String
+}
+
+type Query {
+	findAllCurrencies:[Currency]
+	findCurrency(currencyCode: ID):Currency
+}
+
+type Mutation {
+	createCurrency(currencyInput:CurrencyInput):Currency
+	updateCurrency(currencyCode:ID,country:String):Currency
+}

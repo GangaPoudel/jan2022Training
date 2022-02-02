@@ -38,10 +38,10 @@ public class CurrencyService {
 		return status;
 	}
 	
-	public Currency updateCurrency(long currencyId) {
+	public Currency updateCurrency(long currencyId, String country) {
 		Currency currency = this.getCurrencyById(currencyId);
 		if(currency != null) {
-			currency.setCurrencyCode(currencyId);
+			currency.setCountry(country);
 		}
 		return this.currencyRepo.save(currency);
 	}

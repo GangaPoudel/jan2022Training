@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1114cc47-3a37-4650-a8b1-af24ef0af840" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/calendar/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/src/main/java/com/example/calendar/CalendarApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/src/main/java/com/example/calendar/configurations/SwaggerConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/src/main/java/com/example/calendar/controllers/CalendarController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/src/main/java/com/example/calendar/models/Calendar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/src/main/java/com/example/calendar/models/CalendarInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/src/main/java/com/example/calendar/models/Country.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/src/main/java/com/example/calendar/mutations/CalendarMutationResolver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/src/main/java/com/example/calendar/queries/CalenderQueryResolver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/src/main/java/com/example/calendar/repositories/CalendarRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/src/main/java/com/example/calendar/services/CalendarService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/src/main/resources/calendar.graphqls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/src/main/resources/graphqls/calendar.graphqls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar/src/test/java/com/example/calendar/CustomerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency/src/main/java/com/example/currency/CurrencyApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency/src/main/java/com/example/currency/configurations/SwaggerConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency/src/main/java/com/example/currency/controllers/CurrencyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency/src/main/java/com/example/currency/models/Currency.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency/src/main/java/com/example/currency/repositories/CurrencyRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency/src/main/java/com/example/currency/services/CurrencyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency/src/test/java/com/example/currency/CustomerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/example/customer/CustomerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/example/customer/configurations/SwaggerConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/example/customer/controllers/BankController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/example/customer/controllers/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/example/customer/controllers/DeskController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/example/customer/models/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/example/customer/models/Bank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/example/customer/models/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/example/customer/models/Desk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/example/customer/models/FullName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/example/customer/repositories/BankRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/example/customer/repositories/CustomerRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/example/customer/repositories/DeskRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/example/customer/services/BankService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/example/customer/services/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/example/customer/services/DeskService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/graphqls/customerql.graphqls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/test/java/com/example/customer/CustomerApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="assignment4" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="24JaQYM2MKfqAawwsrn4Lp5A1Zc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="customer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.customer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.customer.CustomerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.CustomerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1114cc47-3a37-4650-a8b1-af24ef0af840" name="Changes" comment="" />
+      <created>1643351127960</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643351127960</updated>
+      <workItem from="1643351129114" duration="896000" />
+      <workItem from="1643352045794" duration="50000" />
+      <workItem from="1643352214948" duration="79000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

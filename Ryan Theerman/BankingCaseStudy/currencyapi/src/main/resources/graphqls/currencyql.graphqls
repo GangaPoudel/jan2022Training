@@ -1,0 +1,26 @@
+type Currency {
+    currencyId: ID!
+    country: String
+    currencySymbol: String
+    tradableFlag: Int
+    description: String
+}
+
+input CurrencyInput {
+    country: String
+    currencySymbol: String
+    tradableFlag: Int
+    description: String
+}
+
+type Query {
+	findAllCurrencies:[Currency]
+	findCurrencyById(currencyId: ID):Currency
+}
+
+type Mutation {
+    createCurrency(currencyInput:CurrencyInput):Currency
+    updateCurrency(currencyId:Long,tradableFlag:Int):Currency
+    deleteCurrency(currencyId:Long):Boolean
+
+}

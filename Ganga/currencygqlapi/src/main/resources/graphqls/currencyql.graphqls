@@ -1,0 +1,33 @@
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Currency {
+	Id: ID!
+	currencyName: String
+	countryName: String
+	currencySymbol:String
+	currencyImage: byte
+		
+	
+}
+
+input CurrencyInput {
+
+    currencyName: String
+	currencySymbol : String
+	countryName : String
+
+    
+}
+
+type Query {
+	findAllCurrency:[Currency]
+	findCurrency(id: ID):Currency
+}
+
+type Mutation {
+	createCurrency(currInput:CurrencyInput):Currency
+        updateCurrency(Currency:currency):Currency
+}

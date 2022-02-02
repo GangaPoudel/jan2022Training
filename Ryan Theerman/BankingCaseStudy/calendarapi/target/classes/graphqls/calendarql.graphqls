@@ -1,0 +1,25 @@
+type Calendar {
+    holidayId: ID!
+    event: String
+    category: String
+    dateHoliday: String
+    countryCode: String
+}
+
+input CalendarInput {
+    event: String
+    category: String
+    dateHoliday: String
+    countryCode: String
+}
+
+type Query {
+	getAllHolidays:[Calendar]
+	getHolidayById(holidayId: ID):Calendar
+}
+
+type Mutation {
+    createHoliday(calendarInput:CalendarInput):Calendar
+    updateHoliday(holidayId:ID,category:String):Calendar
+    deleteHoliday(holidayId:Long):Boolean
+}

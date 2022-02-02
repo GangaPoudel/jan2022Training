@@ -1,0 +1,21 @@
+type Currency {
+	currencyId:ID!
+	country: String
+	description : String
+	tradeable_flag : String
+	symbol : String
+}
+input CurrencyInput {
+	country: String
+	description : String
+	tradeable_flag : String
+	symbol : String
+}
+type Query {
+	findAllCurrency:[Currency]
+	findCurrency(currencyId: ID):Currency
+}
+type Mutation {
+	createCurrency(currencyInput:CurrencyInput):Currency
+        
+}

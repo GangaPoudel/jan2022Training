@@ -1,0 +1,15 @@
+
+]	java:S125"<This block of commented-out lines of code should be removed.(È­‡Îÿÿÿÿÿ8Øú¼”ê/
+]	java:S125F"<This block of commented-out lines of code should be removed.(û¡ñıüÿÿÿÿ8îú¼”ê/
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ïú¼”ê/
+^
+java:S1128"<Remove this unused import 'com.google.common.collect.Lists'.(ˆäóöøÿÿÿÿ8ïú¼”ê/
+e
+java:S1128"CRemove this unused import 'springfox.documentation.service.ApiKey'.(ûƒ¯äÿÿÿÿÿ8ïú¼”ê/
+q
+java:S1128"ORemove this unused import 'springfox.documentation.service.AuthorizationScope'.(Ã·İùøÿÿÿÿ8ğú¼”ê/
+k
+java:S1128"NRemove this unused import 'springfox.documentation.service.SecurityReference'.(¹À«ı8ğú¼”ê/
+u
+java:S1128"YRemove this unused import 'springfox.documentation.spi.service.contexts.SecurityContext'.(³ã¼8ğú¼”ê/

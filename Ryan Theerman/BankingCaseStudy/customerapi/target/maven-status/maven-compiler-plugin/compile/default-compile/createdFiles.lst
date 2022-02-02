@@ -1,1 +1,13 @@
-com\virtusa\traderapi\TraderapiApplication.class
+com\virtusa\customerapi\configurations\SwaggerConfiguration.class
+com\virtusa\customerapi\configurations\DbConfiguration.class
+com\virtusa\customerapi\CustomerapiApplication.class
+com\virtusa\customerapi\models\FullName.class
+com\virtusa\customerapi\repositories\CustomerRepo.class
+com\virtusa\customerapi\queries\CustomerQueryResolver.class
+META-INF\spring-configuration-metadata.json
+com\virtusa\customerapi\models\CustomerInput.class
+com\virtusa\customerapi\services\CustomerService.class
+com\virtusa\customerapi\models\Customer.class
+com\virtusa\customerapi\configurations\VaultConfiguration.class
+com\virtusa\customerapi\mutations\CustomerMutationResolver.class
+com\virtusa\customerapi\controllers\CustomerController.class

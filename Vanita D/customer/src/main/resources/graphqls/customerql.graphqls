@@ -1,0 +1,50 @@
+type Customer {
+	customerId: ID!
+	name: FullName
+	address: Address
+	phoneNumber: String
+	email: String
+	dob: String	
+}
+type FullName {
+	firstName: String
+	lastName: String
+	middleName: String
+}
+type Address{
+	roadName:String
+	city:String
+	country:String
+	zipCode:String
+}
+
+input CustomerInput {
+	
+	name: FullNameInput
+	address: AddressInput
+	phoneNumber: String
+	email: String
+	dob: String	
+}
+input FullNameInput {
+	firstName: String
+	lastName: String
+	middleName: String
+}
+input AddressInput{
+	roadName:String
+	city:String
+	country:String
+	zipCode:String
+}
+
+type Query {
+	findAllCustomers:[Customer]
+	findCustomer(customerId: ID):Customer
+}
+type Mutation {
+	createCustomer(customerInput:CustomerInput):Customer
+        
+}
+
+

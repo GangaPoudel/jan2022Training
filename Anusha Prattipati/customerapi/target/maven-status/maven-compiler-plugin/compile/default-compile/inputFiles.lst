@@ -2,6 +2,9 @@ C:\Users\prati\eclipse-workspace\virtusa training\customerapi\src\main\java\com\
 C:\Users\prati\eclipse-workspace\virtusa training\customerapi\src\main\java\com\virtusa\customerapi\models\FullName.java
 C:\Users\prati\eclipse-workspace\virtusa training\customerapi\src\main\java\com\virtusa\customerapi\repositories\CustomerRepo.java
 C:\Users\prati\eclipse-workspace\virtusa training\customerapi\src\main\java\com\virtusa\customerapi\configurations\SwaggerConfiguration.java
+C:\Users\prati\eclipse-workspace\virtusa training\customerapi\src\main\java\com\virtusa\customerapi\models\CustomerInput.java
 C:\Users\prati\eclipse-workspace\virtusa training\customerapi\src\main\java\com\virtusa\customerapi\models\Customer.java
+C:\Users\prati\eclipse-workspace\virtusa training\customerapi\src\main\java\com\virtusa\customerapi\mutations\CustomerMutationResolver.java
+C:\Users\prati\eclipse-workspace\virtusa training\customerapi\src\main\java\com\virtusa\customerapi\queries\CustomerQueryResolver.java
 C:\Users\prati\eclipse-workspace\virtusa training\customerapi\src\main\java\com\virtusa\customerapi\services\CustomerService.java
 C:\Users\prati\eclipse-workspace\virtusa training\customerapi\src\main\java\com\virtusa\customerapi\controllers\CustomerController.java

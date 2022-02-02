@@ -1,5 +1,7 @@
 package com.virtusa.traderapi.models;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,8 +14,12 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "Bank")
-public class Bank {
-    @Id
+public class Bank implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @ApiModelProperty(hidden = true)
     @Column(name="Bank_Id")

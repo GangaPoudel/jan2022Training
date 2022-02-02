@@ -1,6 +1,9 @@
+com\virtusa\calendarapi\models\CalendarInput.class
 com\virtusa\calendarapi\CalendarapiApplication.class
 com\virtusa\calendarapi\models\Calendar.class
+com\virtusa\calendarapi\mutations\CalendarMutationResolver.class
 com\virtusa\calendarapi\services\CalendarService.class
 com\virtusa\calendarapi\repositories\CalendarRepo.class
+com\virtusa\calendarapi\queries\CalendarQueryResolver.class
 com\virtusa\calendarapi\configurations\SwaggerConfiguration.class
 com\virtusa\calendarapi\controllers\CalendarController.class

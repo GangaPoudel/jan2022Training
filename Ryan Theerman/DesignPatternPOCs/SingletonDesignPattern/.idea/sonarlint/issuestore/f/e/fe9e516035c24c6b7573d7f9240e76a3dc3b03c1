@@ -1,0 +1,11 @@
+
+Z
+java:S1854"?Remove this useless assignment to local variable "instanceTwo".(òô—Ìûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ŞõÌü
+S	java:S106"9Replace this use of System.out or System.err by a logger.(°æ–…úÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(£Äé¯
+K
+java:S1481"0Remove this unused "instanceTwo" local variable.(òô—Ìûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¾¤ÉËÿÿÿÿÿ
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(°æ–…úÿÿÿÿ8Ï¬§‘ë/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ºÕ½ùÿÿÿÿ8õ’»‘ë/

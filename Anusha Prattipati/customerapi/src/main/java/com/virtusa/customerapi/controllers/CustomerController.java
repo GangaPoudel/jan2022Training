@@ -58,7 +58,7 @@ private CustomerService customerService;
 	//put
 	
 	@PutMapping(value="/{customerId}/{address}",params = "version=1.0")
-	public ResponseEntity<?> updateBank(@PathVariable("customerId") long customerId,@PathVariable("address") String address){
+	public ResponseEntity<?> updateCustomer(@PathVariable("customerId") long customerId,@PathVariable("address") String address){
 		Customer customerObj=this.customerService.updateCustomer(customerId,address);
 		if(customerObj!=null)
 			return ResponseEntity.status(HttpStatus.ACCEPTED).body(customerObj);

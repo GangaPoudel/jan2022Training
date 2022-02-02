@@ -1,9 +1,12 @@
 package com.virtusa.customerapi.services;
 
-import com.virtusa.customerapi.models.Bank;
 import com.virtusa.customerapi.models.Customer;
+import com.virtusa.customerapi.models.FullName;
 import com.virtusa.customerapi.repositories.CustomerRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 
@@ -13,31 +16,25 @@ import java.util.List;
 public class CustomerService {
     @Autowired
     private CustomerRepo customerRepo;
-    @Autowired
-    private BankService bankService;
 
     //insert
-    public Customer addCustomer(long bankId, Customer customer) {
-        Bank bank=this.bankService.getBankById(bankId);
-        if(bank!=null)
-            customer.setBank(bank);
-
-        else
-            customer.setBank(null);
+    public Customer addCustomer(Customer customer) {
         this.customerRepo.save(customer);
         return customer;
     }
-
-    //list all the customers
+//    @Cacheable(value="Customer")
+    //list all customers
     public List<Customer> getAllCustomers() {
         return this.customerRepo.findAll();
     }
 
+//    @Cacheable(value="Customer", key="#customerId")
     //list customer by id
     public Customer getCustomerById(long customerId) {
         return this.customerRepo.findById(customerId).orElse(null);
     }
 
+//    @CacheEvict(value="Customer", key="#customerId")
     //delete
     public boolean deleteCustomerById(long customerId) {
         boolean status = false;
@@ -48,21 +45,26 @@ public class CustomerService {
         return status;
     }
 
+//    @CachePut(value="Customer", key="#customerId")
     //update
-    public Customer updateCustomer(Customer customer) {
+    public Customer updateCustomer(long customerId, String customerEmail) {
+
+        Customer customer=this.getCustomerById(customerId);
+        if(customer!=null) {
+            customer.setCustomerEmail(customerEmail);
+        }
         return this.customerRepo.save(customer);
     }
 
-    public List<Customer> updateBank(long bankId) {
-
-        Bank bank=this.bankService.getBankById(bankId);
-        List<Customer> customerList=this.customerRepo.findByBank(bank);
-
-        for(Customer customer:customerList) {
-            customer.setBank(null);
-            this.customerRepo.save(customer);
+//    @CacheEvict(value="Customer", key="#customerId")
+    public Boolean deleteCustomer(Long customerId) {
+        Customer customer=this.getCustomerById(customerId);
+        if(customer!=null) {
+            this.customerRepo.deleteById(customerId);
+            return true;
+        } else {
+            return false;
         }
-
-        return customerList;
     }
+
 }

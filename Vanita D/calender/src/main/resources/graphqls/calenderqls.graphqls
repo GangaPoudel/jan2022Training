@@ -1,0 +1,21 @@
+type Query {
+	findAllCalenders:[Calender]
+	findCalender(holidayId: ID):Calender
+}
+
+type Calender {
+	holidayId:ID!
+	event:String
+	category:String
+	holidayDate:String
+}
+
+input CalenderInput {
+	event:String
+	category:String
+	holidayDate:String
+}
+
+type Mutation {
+	createCalender(calenderInput:CalenderInput):Calender
+}

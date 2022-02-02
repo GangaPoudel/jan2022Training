@@ -9,12 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.virtusa</groupId>
-  <artifactId>customerapi</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
-
-  <name>customerapi</name>
-  <url>http://maven.apache.org</url>
+	<artifactId>customerapi</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>customerapi</name>
+	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -39,6 +37,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-entitymanager</artifactId>
+     
+</dependency>
 		<!-- mysql driver -->
 		<dependency>
 			<groupId>mysql</groupId>
@@ -98,7 +101,54 @@
 		    <artifactId>lombok</artifactId>
 		    <scope>provided</scope>
 		</dependency>
+		 <!--  Squiggly-->
+		 <dependency>
+			    <groupId>com.github.bohnman</groupId>
+			    <artifactId>squiggly-filter-jackson</artifactId>
+			    <version>1.3.18</version>
+			</dependency>  
+		<!-- graphql -->
+		<dependency>
+            <groupId>com.graphql-java</groupId>
+            <artifactId>graphql-spring-boot-starter</artifactId>
+            <version>5.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.graphql-java</groupId>
+            <artifactId>graphql-java-tools</artifactId>
+            <version>5.2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.graphql-java</groupId>
+            <artifactId>graphiql-spring-boot-starter</artifactId>
+            <version>5.0.2</version>
+        </dependency>
+		
+        <dependency>
+	        <groupId>org.antlr</groupId>
+			<artifactId>antlr4-runtime</artifactId>
+			<version>4.7.1</version>
+			<scope>compile</scope>
+		</dependency>
+		
 	</dependencies>
+	<profiles>
+	<profile>
+	<id>sonar</id>
+	<activation>
+	<activeByDefault>true</activeByDefault>
+
+	</activation>
+	<properties>
+<!-- Optional URL to server. Default value is http://localhost:9090 -->
+<sonar.host.url>
+http://localhost:9090
+</sonar.host.url>
+</properties>
+	
+	</profile>
+	</profiles>
+	
  <repositories>
         <repository>
           <id>jcenter-snapshots</id>

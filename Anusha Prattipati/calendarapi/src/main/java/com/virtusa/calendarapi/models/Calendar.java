@@ -17,12 +17,19 @@ import javax.persistence.Table;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.DateTimeFormat.ISO;
+
+
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 
 @Data
 @Entity
 @Table(name = "Calendar")
+@AllArgsConstructor
+@NoArgsConstructor
 public class Calendar {
 
 	   @Id
@@ -35,9 +42,9 @@ public class Calendar {
 	   @Column(name="Calendar_Event", length = 150, nullable = false)
 	    private String calendarEvent;
 		
-		@DateTimeFormat(iso = ISO.DATE)
+		//@DateTimeFormat(iso = ISO.DATE)
 		@Column(name="Date_Holiday")
-		private LocalDate dateHoliday;
+		private String dateHoliday;
 		@Column(name="Calendar_Countrycode",length = 50,nullable = false)
 		private String calendarCountrycode;
 		

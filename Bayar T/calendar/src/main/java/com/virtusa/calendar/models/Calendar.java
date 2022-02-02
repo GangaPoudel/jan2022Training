@@ -13,11 +13,15 @@ import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.DateTimeFormat.ISO;
 
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Entity
 @Table(name = "Calendar")
+@AllArgsConstructor
+@NoArgsConstructor
 public class Calendar {
 
 	@Id
@@ -32,8 +36,8 @@ public class Calendar {
 	@Column(name="Category")
 	private String category;
 	
-	@DateTimeFormat(iso = ISO.DATE)
+	//@DateTimeFormat(iso = ISO.DATE)
 	@Column(name="Date_Holiday")
-	private LocalDate dateHoliday;
+	private String dateHoliday;
 	
 }

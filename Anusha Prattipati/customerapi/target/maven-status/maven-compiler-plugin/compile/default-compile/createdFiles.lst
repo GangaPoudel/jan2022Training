@@ -1,7 +1,10 @@
 com\virtusa\customerapi\configurations\SwaggerConfiguration.class
+com\virtusa\customerapi\models\CustomerInput.class
 com\virtusa\customerapi\services\CustomerService.class
 com\virtusa\customerapi\CustomerapiApplication.class
 com\virtusa\customerapi\models\Customer.class
 com\virtusa\customerapi\models\FullName.class
 com\virtusa\customerapi\repositories\CustomerRepo.class
+com\virtusa\customerapi\queries\CustomerQueryResolver.class
+com\virtusa\customerapi\mutations\CustomerMutationResolver.class
 com\virtusa\customerapi\controllers\CustomerController.class

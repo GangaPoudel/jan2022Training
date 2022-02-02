@@ -47,9 +47,9 @@ public class CalendarController {
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Holiday does not exist");
 	}
 	
-	@PutMapping(value="/{holidayId}",params = "version=1.0")
-	public ResponseEntity<?> updateHoliday(@PathVariable("holidayId") long holidayId){
-		Calendar calendarObj=this.calendarService.updateHoliday(holidayId);
+	@PutMapping(value="/{holidayId}/{event}",params = "version=1.0")
+	public ResponseEntity<?> updateHoliday(@PathVariable("holidayId") long holidayId, @PathVariable("event") String event){
+		Calendar calendarObj=this.calendarService.updateHoliday(holidayId, event);
 		if(calendarObj!=null)
 			return ResponseEntity.status(HttpStatus.ACCEPTED).body(calendarObj);
 		else

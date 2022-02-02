@@ -1,1 +1,12 @@
-com\virtusa\traderapi\TraderapiApplication.class
+com\virtusa\currencyapi\controllers\CurrencyController.class
+com\virtusa\currencyapi\models\Currency.class
+com\virtusa\currencyapi\queries\CurrencyQueryResolver.class
+META-INF\spring-configuration-metadata.json
+com\virtusa\currencyapi\configurations\SwaggerConfiguration.class
+com\virtusa\currencyapi\repositories\CurrencyRepo.class
+com\virtusa\currencyapi\configurations\DbConfiguration.class
+com\virtusa\currencyapi\configurations\VaultConfiguration.class
+com\virtusa\currencyapi\mutations\CurrencyMutationResolver.class
+com\virtusa\currencyapi\CurrencyapiApplication.class
+com\virtusa\currencyapi\models\CurrencyInput.class
+com\virtusa\currencyapi\services\CurrencyService.class

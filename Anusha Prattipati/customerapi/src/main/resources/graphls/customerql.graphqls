@@ -1,0 +1,42 @@
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Customer{
+
+customerId: ID!
+name: FullName
+email: String
+dob: String
+address: String
+
+
+}
+type FullName {
+
+firstName: String
+lastName: String
+middleName: String
+
+}
+
+input Customerinput{
+ dob : String
+ name: FullName
+ email: String
+ address: String
+
+}
+
+
+type Query {
+	findAllCustomers:[Customer]
+	findCustomer(customerId: ID):Customer
+}
+
+type Mutation {
+	createCustomer(customerInput:CustomerInput):Customer
+        updateCustomer(customerId:ID,address:String):Customer
+        deleteCustomerbyId(customerid:ID):Customer
+}
